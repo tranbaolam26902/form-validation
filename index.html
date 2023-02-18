@@ -9,33 +9,111 @@
 	</head>
 	<body>
 		<div class="container">
-			<h2 class="title">CREATE ACCOUNT</h2>
-			<form action="" id="sign-up-form">
+			<h2 class="title">Form Validation</h2>
+			<form action="" id="form">
 				<div class="form-group">
-					<input type="text" id="username" placeholder="Username" />
-					<span class="error-message"></span>
-				</div>
-				<div class="form-group">
-					<input type="email" id="email" placeholder="Email" />
+					<input
+						type="text"
+						id="username"
+						name="username"
+						placeholder="Username"
+					/>
 					<span class="error-message"></span>
 				</div>
 				<div class="form-group">
 					<input
-						type="password"
+						type="text"
+						id="email"
+						name="email"
+						placeholder="Email"
+					/>
+					<span class="error-message"></span>
+				</div>
+				<div class="form-group">
+					<input
+						type="text"
 						id="password"
+						name="password"
 						placeholder="Password"
 					/>
 					<span class="error-message"></span>
 				</div>
 				<div class="form-group">
 					<input
-						type="password"
+						type="text"
 						id="confirm-password"
+						name="confirm-password"
 						placeholder="Confirm password"
 					/>
 					<span class="error-message"></span>
 				</div>
-				<button id="submit">SIGN UP</button>
+				<div class="form-group">
+					<input type="file" name="avatar" id="avatar" />
+					<span class="error-message"></span>
+				</div>
+				<div class="form-group">
+					<select id="select" name="option">
+						<option value="">-- Select --</option>
+						<option value="1">Option 1</option>
+						<option value="2">Option 2</option>
+						<option value="3">Option 3</option>
+					</select>
+					<span class="error-message"></span>
+				</div>
+				<div class="form-group">
+					<div class="choices">
+						<label for="male">Male</label>
+						<input
+							type="radio"
+							id="male"
+							name="gender"
+							value="male"
+						/>
+						<label for="female">Female</label>
+						<input
+							type="radio"
+							id="female"
+							name="gender"
+							value="female"
+						/>
+						<label for="other">Other</label>
+						<input
+							type="radio"
+							id="other"
+							name="gender"
+							value="other"
+						/>
+					</div>
+
+					<span class="error-message"></span>
+				</div>
+				<div class="form-group">
+					<div class="choices">
+						<label for="red">Red</label>
+						<input
+							type="checkbox"
+							id="red"
+							name="color"
+							value="red"
+						/>
+						<label for="green">Green</label>
+						<input
+							type="checkbox"
+							id="green"
+							name="color"
+							value="green"
+						/>
+						<label for="blue">Blue</label>
+						<input
+							type="checkbox"
+							id="blue"
+							name="color"
+							value="blue"
+						/>
+					</div>
+					<span class="error-message"></span>
+				</div>
+				<button id="btn-submit">SUBMIT</button>
 			</form>
 		</div>
 		<script src="./main.js"></script>
